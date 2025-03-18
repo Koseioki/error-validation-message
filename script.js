@@ -6,10 +6,10 @@ document.getElementById('form').addEventListener('submit', function(e) {
   var textInput = document.getElementById('textinput').value;
   var textInputError = document.getElementById('textinputError');
 
-    textInputError.textContent = 'Error: I said anything but there is an error';
+    textInputError.innerHTML  = '<img src="./error.svg" alt="" /> Error: I said anything but there is an error';
 
     var radioError = document.getElementById('radioError');
-    radioError.textContent = 'Error: I said any of them but there is an error';
+    radioError.innerHTML = '<img src="./error.svg" alt="" /> Error: I said any of them but there is an error';
 
 
     // set focus to #alert
