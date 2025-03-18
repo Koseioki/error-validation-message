@@ -17,19 +17,39 @@
     <form id="form">
 
         <!-- aria live region -->
-        <div aria-live="assertive" id="alert" class="sr-only" tabindex="0">
-            There is 1 error in this form
-        </div>
+        <div id="alert" tabindex="0" class="sr-only" hidden></div>
 
 
         <div>
 
-            <label for="textinput">Enter anything</label>
+            <label for="textinput" class="question-titles">Enter anything</label>
         </div>
         <div>
             <input type="text" name="textinput" id="textinput" aria-describedby="textinputError" aria-required="true">
         </div>
         <span class="error-message" id="textinputError"></span>
+
+
+
+
+        <fieldset aria-describedby="radioError">
+            <legend class="question-titles">Choose any of them</legend>
+            <div>
+                <span id="radioError" class="error-message"></span>
+            </div>
+            <div> <Input id="radio1" type="radio" name="radio" value="banana" aria-required="true">
+                <label for="radio1">Banana</label>
+            </div>
+            <div>
+                <Input id="radio2" type="radio" name="radio" value="broccoli" aria-required="true">
+                <label for="radio2">Broccoli</label>
+            </div>
+            <div>
+                <Input id="radio3" type="radio" name="radio" value="tuna" aria-required="true">
+                <label for="radio3">Tuna</label>
+            </div>
+        </fieldset>
+
 
         <div>
             <button type="submit">Submit</button>
