@@ -20,34 +20,59 @@
         <div id="alert" tabindex="0" class="sr-only" hidden></div>
 
 
-        <div>
+  
 
-            <label for="textinput" class="question-titles">Enter anything</label>
-        </div>
-        <div>
+            <label for="textinput" class="question-titles">Enter anything <span
+                    aria-hidden="true">(*required)</span></label>
+  
             <input type="text" name="textinput" id="textinput" aria-describedby="textinputError" aria-required="true">
-        </div>
-        <span class="error-message" id="textinputError"></span>
+
+            <span class="error-message" id="textinputError"></span>
+     
+
+
+     
+
+            <label for="textarea" class="question-titles">Enter anything <span
+                    aria-hidden="true">(*required)</span></label>
+   
+            <textarea name="textarea" id="textarea" aria-describedby="textareaError" aria-required="true"></textarea>
+
+            <span class="error-message" id="textareaError"></span>
+    
 
 
 
 
         <fieldset aria-describedby="radioError">
-            <legend class="question-titles">Choose any of them</legend>
-            <div>
-                <span id="radioError" class="error-message"></span>
-            </div>
-            <div> <Input id="radio1" type="radio" name="radio" value="banana" aria-required="true">
+            <legend class="question-titles">Choose any of them <span aria-hidden="true">(*required)</span></legend>
+
+            <span id="radioError" class="error-message"></span>
+            <Input id="radio1" type="radio" name="radio" value="banana" aria-required="true">
                 <label for="radio1">Banana</label>
-            </div>
-            <div>
+         
                 <Input id="radio2" type="radio" name="radio" value="broccoli" aria-required="true">
                 <label for="radio2">Broccoli</label>
-            </div>
-            <div>
+          
                 <Input id="radio3" type="radio" name="radio" value="tuna" aria-required="true">
                 <label for="radio3">Tuna</label>
-            </div>
+            
+        </fieldset>
+
+        <fieldset aria-describedby="checkboxError checkboxHint">
+            <legend class="question-titles">Choose any of them <span aria-hidden="true">(*required)</span></legend>
+            <span id="checkboxHint" class="hint-message">Select all that apply</span>
+            <span id="checkboxError" class="error-message"></span>
+         
+                <input id="checkbox1" type="checkbox" name="checkbox" value="banana" aria-required="true">
+                <label for="checkbox1">Banana</label>
+         
+                <input id="checkbox2" type="checkbox" name="checkbox" value="broccoli" aria-required="true">
+                <label for="checkbox2">Broccoli</label>
+         
+                <input id="checkbox3" type="checkbox" name="checkbox" value="tuna" aria-required="true">
+                <label for="checkbox3">Tuna</label>
+           
         </fieldset>
 
 
