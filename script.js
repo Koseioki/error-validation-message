@@ -3,10 +3,10 @@
 
 document.getElementById('form').addEventListener('submit', function(e) {
   e.preventDefault();
-//   var textInput = document.getElementById('textinput').value;
-//   var textInputError = document.getElementById('textinputError');
+  var textInput = document.getElementById('textinput').value;
+  var textInputError = document.getElementById('textinputError');
 
-//     textInputError.textContent = 'Error: I said anything but actually please enter your name';
+    textInputError.textContent = 'Error: I said anything but actually please enter your name';
 
     // set focus to #alert
     var alert = document.getElementById('alert');
