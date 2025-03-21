@@ -99,11 +99,22 @@ img{
 }
 
 a:focus,
-input:focus,
+input[type="text"]:focus,
+
 textarea:focus,
-button:focus{
+button:focus,
+#alert:focus{
     outline: none;
     box-shadow: 0 0 0 0.25rem #F6F6F6, 0 0 0 0.5rem darkblue;
+
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus{
+    /* border: 0.25rem #F6F6F6 solid; */
+    outline:0.25rem darkblue solid;
+    outline-offset: 0.25rem;
+
 
 }
 
