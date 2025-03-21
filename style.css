@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
@@ -31,6 +34,7 @@ input#fullname, textarea{
     padding: 1rem 0.5rem;
     width: 100%;
     max-width: 100%;
+    min-width: 100%;
     border: 0.125rem solid #000000;
     border-radius: 0.25rem;
 
