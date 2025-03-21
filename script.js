@@ -14,6 +14,6 @@ document.getElementById('form').addEventListener('submit', function(e) {
     var alert = document.getElementById('alert');
     // remove attribute hidden	
     alert.removeAttribute('hidden');
-    alert.innerHTML = '<p>There are 4 errors in this form</p> <ul> <li> <a href="#fullname">' + fullnameError.textContent + '</a> </li> <li> <a href="#requirements">' + requirementsError.textContent + '</a> </li> <li> <a href="#radio">' + radioError.textContent + '</a> </li> <li> <a href="#checkbox">' + checkboxError.textContent + '</a> </li> </ul>';
+    alert.innerHTML = '<h3>There is a problem</h3> <ul> <li> <a href="#fullname">' + fullnameError.textContent + '</a> </li> <li> <a href="#requirements">' + requirementsError.textContent + '</a> </li> <li> <a href="#radio">' + radioError.textContent + '</a> </li> <li> <a href="#checkbox">' + checkboxError.textContent + '</a> </li> </ul>';
     alert.focus();
 });
