@@ -5,6 +5,14 @@ document.getElementById('form').addEventListener('submit', function(e) {
   var radioError = document.getElementById('radioError');
   var checkboxError = document.getElementById('checkboxError');
 
+  var fullname = document.getElementById('fullname');
+  var requirements = document.getElementById('requirements');
+
+  // add the error-input class to fullName and requirements
+  fullname.classList.add('error-input');
+  requirements.classList.add('error-input');
+ 
+
     fullnameError.innerHTML  = '<img src="./error.svg" alt="" /> Enter your full name.';
     requirementsError.innerHTML = '<img src="./error.svg" alt="" /> Provide any special dietary requirements or leave the field blank if none.';
     radioError.innerHTML = '<img src="./error.svg" alt="" /> Select your preferred meal plan.';

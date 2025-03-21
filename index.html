@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <a href="./index.html">
-        <h1>Form validation</h1>
-    </a>
+    
+        <h1><a href="./index.html">Form validation</a></h1>
+    
 
     <form id="form">
 
@@ -27,7 +27,7 @@
 
         <label for="fullname" class="question-titles">Full Name <span aria-hidden="true">(*)</span></label>
 
-        <input type="text" name="fullname" id="fullname" aria-describedby="fullnameError" aria-required="true">
+        <input class="input-field" type="text" name="fullname" id="fullname" aria-describedby="fullnameError" aria-required="true">
 
         <span class="error-message" id="fullnameError"></span>
 
@@ -37,7 +37,7 @@
         <label for="requirements" class="question-titles">Special Dietary Requirements <span
                 aria-hidden="true">(*)</span></label>
 
-        <textarea name="requirements" id="requirements" aria-describedby="requirementsError"
+        <textarea class="input-field" name="requirements" id="requirements" aria-describedby="requirementsError"
             aria-required="true"></textarea>
 
         <span class="error-message" id="requirementsError"></span>
