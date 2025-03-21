@@ -20,30 +20,27 @@
         <p>Fill in the form below to register for the event.</p>
 
         <!-- aria live region -->
-        <div id="alert" tabindex="0" class="sr-only" hidden></div>
+        <div id="alert" tabindex="-1" class="sr-only" role="alert" hidden></div>
 
 
 
-        <div>
 
-            <label for="fullname" class="question-titles">Full Name <span aria-hidden="true">(*required)</span></label>
+        <label for="fullname" class="question-titles">Full Name <span aria-hidden="true">(*required)</span></label>
 
-            <input type="text" name="fullname" id="fullname" aria-describedby="fullnameError" aria-required="true">
+        <input type="text" name="fullname" id="fullname" aria-describedby="fullnameError" aria-required="true">
 
-            <span class="error-message" id="fullnameError"></span>
-        </div>
+        <span class="error-message" id="fullnameError"></span>
 
 
 
-        <div>
-            <label for="requirements" class="question-titles">Special Dietary Requirements <span
-                    aria-hidden="true">(*required)</span></label>
 
-            <textarea name="requirements" id="requirements" aria-describedby="requirementsError"
-                aria-required="true"></textarea>
+        <label for="requirements" class="question-titles">Special Dietary Requirements <span
+                aria-hidden="true">(*required)</span></label>
 
-            <span class="error-message" id="requirementsError"></span>
-        </div>
+        <textarea name="requirements" id="requirements" aria-describedby="requirementsError"
+            aria-required="true"></textarea>
+
+        <span class="error-message" id="requirementsError"></span>
 
 
 
@@ -52,30 +49,36 @@
             <legend class="question-titles">Preferred Meal Plan <span aria-hidden="true">(*required)</span></legend>
 
             <span id="radioError" class="error-message"></span>
-            <Input id="radio1" type="radio" name="vegetarian" value="vegetarian" aria-required="true">
-            <label for="radio1">Vegetarian</label>
-
-            <Input id="radio2" type="radio" name="nonVegetarian" value="nonVegetarian" aria-required="true">
-            <label for="radio2">Non-Vegetarian</label>
-
-            <Input id="radio3" type="radio" name="vegan" value="vegan" aria-required="true">
-            <label for="radio3">Vegan</label>
+            <div>
+                <Input id="radio1" type="radio" name="vegetarian" value="vegetarian" aria-required="true">
+                <label for="radio1">Vegetarian</label>
+            </div>
+            <div> <Input id="radio2" type="radio" name="nonVegetarian" value="nonVegetarian" aria-required="true">
+                <label for="radio2">Non-Vegetarian</label>
+            </div>
+            <div>
+                <Input id="radio3" type="radio" name="vegan" value="vegan" aria-required="true">
+                <label for="radio3">Vegan</label>
+            </div>
 
         </fieldset>
 
         <fieldset aria-describedby="checkboxError checkboxHint">
             <legend class="question-titles">Additional Meal Preferences <span aria-hidden="true">(*required)</span>
             </legend>
-            <span id="checkboxHint" class="hint-message">Select all that apply</span>
-            <span id="checkboxError" class="error-message"></span>
-
-            <input id="checkbox1" type="checkbox" name="glutenFree" value="glutenFree" aria-required="true">
-            <label for="checkbox1">I prefer gluten-free options.</label>
-
-            <input id="checkbox2" type="checkbox" name="halal" value="halal" aria-required="true">
-            <label for="checkbox2">I need halal food.
-            </label>
-
+            <div>
+                <span id="checkboxHint" class="hint-message">Select all that apply</span>
+                <span id="checkboxError" class="error-message"></span>
+            </div>
+            <div>
+                <input id="checkbox1" type="checkbox" name="glutenFree" value="glutenFree" aria-required="true">
+                <label for="checkbox1">I prefer gluten-free options.</label>
+            </div>
+            <div>
+                <input id="checkbox2" type="checkbox" name="halal" value="halal" aria-required="true">
+                <label for="checkbox2">I need halal food.
+                </label>
+            </div>
             <input id="checkbox3" type="checkbox" name="none" value="none" aria-required="true">
             <label for="checkbox3">I don't have any.</label>
 
