@@ -24,7 +24,7 @@ a{
     color: #555555;
 }
 
-input#textinput, textarea{
+input#fullname, textarea{
     font-size: 1.2rem;
     margin: 0.5rem 0;
     padding: 1rem 0.5rem;

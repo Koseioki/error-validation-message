@@ -16,63 +16,69 @@
 
     <form id="form">
 
+        <h2>Registration Form</h2>
+        <p>Fill in the form below to register for the event.</p>
+
         <!-- aria live region -->
         <div id="alert" tabindex="0" class="sr-only" hidden></div>
 
 
-  
 
-            <label for="textinput" class="question-titles">Enter anything <span
+        <div>
+
+            <label for="fullname" class="question-titles">Full Name <span aria-hidden="true">(*required)</span></label>
+
+            <input type="text" name="fullname" id="fullname" aria-describedby="fullnameError" aria-required="true">
+
+            <span class="error-message" id="fullnameError"></span>
+        </div>
+
+
+
+        <div>
+            <label for="requirements" class="question-titles">Special Dietary Requirements <span
                     aria-hidden="true">(*required)</span></label>
-  
-            <input type="text" name="textinput" id="textinput" aria-describedby="textinputError" aria-required="true">
 
-            <span class="error-message" id="textinputError"></span>
-     
+            <textarea name="requirements" id="requirements" aria-describedby="requirementsError"
+                aria-required="true"></textarea>
 
-
-     
-
-            <label for="textarea" class="question-titles">Enter anything <span
-                    aria-hidden="true">(*required)</span></label>
-   
-            <textarea name="textarea" id="textarea" aria-describedby="textareaError" aria-required="true"></textarea>
-
-            <span class="error-message" id="textareaError"></span>
-    
+            <span class="error-message" id="requirementsError"></span>
+        </div>
 
 
 
 
         <fieldset aria-describedby="radioError">
-            <legend class="question-titles">Choose any of them <span aria-hidden="true">(*required)</span></legend>
+            <legend class="question-titles">Preferred Meal Plan <span aria-hidden="true">(*required)</span></legend>
 
             <span id="radioError" class="error-message"></span>
-            <Input id="radio1" type="radio" name="radio" value="banana" aria-required="true">
-                <label for="radio1">Banana</label>
-         
-                <Input id="radio2" type="radio" name="radio" value="broccoli" aria-required="true">
-                <label for="radio2">Broccoli</label>
-          
-                <Input id="radio3" type="radio" name="radio" value="tuna" aria-required="true">
-                <label for="radio3">Tuna</label>
-            
+            <Input id="radio1" type="radio" name="vegetarian" value="vegetarian" aria-required="true">
+            <label for="radio1">Vegetarian</label>
+
+            <Input id="radio2" type="radio" name="nonVegetarian" value="nonVegetarian" aria-required="true">
+            <label for="radio2">Non-Vegetarian</label>
+
+            <Input id="radio3" type="radio" name="vegan" value="vegan" aria-required="true">
+            <label for="radio3">Vegan</label>
+
         </fieldset>
 
         <fieldset aria-describedby="checkboxError checkboxHint">
-            <legend class="question-titles">Choose any of them <span aria-hidden="true">(*required)</span></legend>
+            <legend class="question-titles">Additional Meal Preferences <span aria-hidden="true">(*required)</span>
+            </legend>
             <span id="checkboxHint" class="hint-message">Select all that apply</span>
             <span id="checkboxError" class="error-message"></span>
-         
-                <input id="checkbox1" type="checkbox" name="checkbox" value="banana" aria-required="true">
-                <label for="checkbox1">Banana</label>
-         
-                <input id="checkbox2" type="checkbox" name="checkbox" value="broccoli" aria-required="true">
-                <label for="checkbox2">Broccoli</label>
-         
-                <input id="checkbox3" type="checkbox" name="checkbox" value="tuna" aria-required="true">
-                <label for="checkbox3">Tuna</label>
-           
+
+            <input id="checkbox1" type="checkbox" name="glutenFree" value="glutenFree" aria-required="true">
+            <label for="checkbox1">I prefer gluten-free options.</label>
+
+            <input id="checkbox2" type="checkbox" name="halal" value="halal" aria-required="true">
+            <label for="checkbox2">I need halal food.
+            </label>
+
+            <input id="checkbox3" type="checkbox" name="none" value="none" aria-required="true">
+            <label for="checkbox3">I don't have any.</label>
+
         </fieldset>
 
 
